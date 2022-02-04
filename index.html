@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiba Game</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+
+        body {
+            margin: 0;
+            background-color: #212121;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
+            font-family: 'Supermercado One';
+            
+        }
+
+        .logo {
+            width: 1080px;
+            height: 200px;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url(img/mutant.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        canvas {
+            border-radius: 12px;
+        }
+        .start {
+            width: 1024px;
+            height: 576px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* background-color: #124552; */
+            background-image: url(img/start_image.gif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 12px;
+            font-size: 5rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px #04d462da;
+        }
+        .start p {
+            cursor: pointer;
+            color: #04d462ea;
+            /* box-shadow: 0 0 12px black;
+            background-color: rgba(0, 0, 0, 0.432); */
+            border-radius: 15px;
+            padding: 0px 35px;
+        }
+
+        .start p:hover {
+            color: black;
+            box-shadow: 0 0 12px #04d462;
+            background-color: #04d462ea;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="start">
+        <div class="btn">
+            <p>START</p>
+        </div>
+    </div>
+    <canvas></canvas>
+    
+    <div class="logo">
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
