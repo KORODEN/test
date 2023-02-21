@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutant Shiba Game</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+
+        body {
+            margin: 0;
+            background-color: #212121;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
+            font-family: 'Supermercado One';
+            
+        }
+
+        .logo {
+            width: 1080px;
+            height: 200px;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url(img/mutant.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        canvas {
+            border-radius: 12px;
+        }
+        .start {
+            width: 1024px;
+            height: 576px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* background-color: #124552; */
+            background-image: url(img/start_image.gif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 12px;
+            font-size: 5rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 10px #04d462da;
+            user-select: none;
+        }
+        .start .btn p {
+            cursor: pointer;
+            color: #04d462ea;
+            /* box-shadow: 0 0 12px black;
+            background-color: rgba(0, 0, 0, 0.432); */
+            border-radius: 15px;
+            padding: 0px 35px;
+            filter: opacity(80%);
+        }
+
+        .start .info-block p {
+            color: #04d462ea;
+            font-size: 1rem;
+        }
+
+        .info-block {
+            position: absolute;
+            width: 1024px;
+            height: 100px;
+            bottom: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .info-block .info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+
+        .info-block .info p {
+            filter: opacity(50%);
+        }
+
+        .info-block .info a {
+            color: #04d462ea;
+            text-decoration: none;
+            font-size: 1.5rem;
+            margin-left: 3px;
+            filter: opacity(50%);
+        }
+
+        .info-block .info a:hover {
+            filter: opacity(100%);
+        }
+
+        .info-block .main-info{
+            margin-right: 30px;
+        }
+
+        .info-block .main-info img {
+            width: 50px;
+            filter: opacity(50%);
+        }
+
+        .info-block .main-info img:hover {
+            filter: opacity(100%);
+        }
+
+        .start .btn p:hover {
+            color: black;
+            box-shadow: 0 0 12px #04d462;
+            background-color: #04d462ea;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="start">
+        <div class="btn">
+            <p>START</p>
+        </div>
+        <div class="info-block">
+            <div class="info">
+                <p>Created by</p>
+                <a href="https://discordapp.com/users/416656701039837196/">dem#8888</a>
+            </div>
+            <div class="main-info">
+                <a href="https://twitter.com/MutantShibaClub"><img src="img/logoTwitter.png"></a>
+                <a href="https://discordapp.com/users/416656701039837196/"><img src="img/logoDiscord.png"></a>
+            </div>
+        </div>
+    </div>
+    <canvas></canvas>
+    
+    
+    <div class="logo">
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
